@@ -33,6 +33,9 @@ while (my $line = decode('Shift_JIS', <IN>)) {
 }
 close(IN);
 
+# Output the tag.
+print STDOUT ";; okuri-nasi entries.\n";
+
 foreach my $key (sort keys %entries) {
   print STDOUT encode(
     'UTF-8',
