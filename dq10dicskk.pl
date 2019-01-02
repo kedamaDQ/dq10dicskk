@@ -45,11 +45,8 @@ foreach my $key (sort keys %entries) {
 
 exit 0;
 
-my $in_file = shift(@ARGV);
-
 sub usage() {
   print STDERR "\n",
                "usage:\n",
                "\t\$ ${0} /path/to/dq10_dic.txt\n\n";
 }
-
